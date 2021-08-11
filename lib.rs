@@ -56,7 +56,7 @@ const SEED: usize = SEED32 as usize;
 const SEED: usize = SEED64 as usize;
 
 trait HashWord {
-    fn hash_word(&mut self, Self);
+    fn hash_word(&mut self, other: Self);
 }
 
 macro_rules! impl_hash_word {
